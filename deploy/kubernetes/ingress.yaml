@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: devops-assistant-ingress
+  labels:
+    app: devops-assistant
+spec:
+  rules:
+    - host: devops-assistant.mpsv.cz
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: devops-assistant-service
+                port:
+                  number: 80

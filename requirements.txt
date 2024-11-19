@@ -1,0 +1,12 @@
+langchain-openai
+atlassian-python-api
+langchain-community
+reportlab
+pytesseract
+Pillow
+reportlab
+svglib
+psycopg2-binary
+pgvector
+gradio
+markdownify
